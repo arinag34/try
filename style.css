@@ -115,7 +115,6 @@ a{
     color: #800649;
     outline: 2px solid black;
     text-align:center;
-    flex: 0 1 50%;
 }
 .grid1{
     display:grid;
@@ -140,16 +139,82 @@ a{
     color: #800649;
     outline: 2px solid black;
     text-align:center;
-    justify-items: end;
-    grid-template-areas: "AA BB C"
-                         "DD DD E"
-                         "DD DD F"
-                         "GG GG F"
-                         "GG GG H"
-                         "II I LL"
-                         "JK K LL"
-                         "MM MM Q"
-                         "NN PP Q"
-                         "OO PP Q"
+    grid-template-areas: "A A A B B B C C C"
+                         "D D D D D D E E E"
+                         "D D D D D D F F F"
+                         "G G G G G G F F F"
+                         "G G G G G G H H H"
+                         "I I I I L L L L L"
+                         "J J K K L L L L L"
+                         "M M M M M M Q Q Q"
+                         "N N N O O O Q Q Q"
+                         "P P P O O O Q Q Q"
 }
-
+.A{
+    grid-area: A;
+    outline: 1px solid black;
+}
+.B{
+    grid-area: B;
+    outline: 1px solid black;
+}
+.C{
+    grid-area: C;
+    outline: 1px solid black;
+}
+.D{
+    grid-area: D;
+    outline: 1px solid black;
+}
+.E{
+    grid-area: E;
+    outline: 1px solid black;
+}
+.F{
+    grid-area: F;
+    outline: 1px solid black;
+}
+.G{
+    grid-area: G;
+    outline: 1px solid black;
+}
+.H{
+    grid-area: H;
+    outline: 1px solid black;
+}
+.I{
+    grid-area: I;
+    outline: 1px solid black;
+}
+.J{
+    grid-area: J;
+    outline: 1px solid black;
+}
+.K{
+    grid-area: K;
+    outline: 1px solid black;
+}
+.L{
+    grid-area: L;
+    outline: 1px solid black;
+}
+.M{
+    grid-area: M;
+    outline: 1px solid black;
+}
+.N{
+    grid-area: N;
+    outline: 1px solid black;
+}
+.O{
+    grid-area: O;
+    outline: 1px solid black;
+}
+.P{
+    grid-area: P;
+    outline: 1px solid black;
+}
+.Q{
+    grid-area: Q;
+    outline: 1px solid black;
+}
