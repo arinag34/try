@@ -6,7 +6,7 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-<div style = "width: 900px; margin: 0 auto">
+<div style = "width: 900px; margin-top: 0; margin-left:450px">
     <div class = "grid1">
         <div class = "grid2">
             <div class= "wrapper">
@@ -89,20 +89,53 @@
     </div>
 </div>
 
-<a href = "index.html">Інформація про орхідеї</a>
-<hr>
-<a href = "pictures.html">Галерея</a>
-<hr>
-<a href = "table-cell.html">Table-cell</a>
-<hr>
-<a href = "float.html">Float</a>
-<hr>
-<a href = "float_pseudoelement.html">Float with pseudoelements</a>
-<hr>
-<a href = "flex.html">Flex</a>
-<hr>
-<a href = "grid-areas.html">Grid-areas</a>
-<hr>
-<a href = "inline-block.html">Inline-block</a>
+
+
+
+
+<ul class = "wrap">
+    <li>
+        <a href = "index.html">Домашня сторінка</a>
+    </li>
+    <li>
+        <a href = "pictures.html">Галерея</a>
+    </li>
+    <li>
+        <a href = "table-cell.html">Табличка</a>
+        <ul class = "ul1">
+            <li>
+                <a href = "inline-block.html">Inline-block</a>
+            </li>
+            <li>
+                <a href = "table-cell.html">Table-cell</a>
+            </li>
+            <li>
+                <a href = "float.html">Флоати</a>
+                <ul class= "ul1">
+                    <li>
+                        <a href = "float.html">Float</a>
+                    </li>
+                    <li>
+                        <a href = "float_pseudoelement.html">Float with pseudoelements</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href = "flex.html">Flex</a>
+            </li>
+            <li>
+                <a href = "#">Грід</a>
+                <ul class = "ul2">
+                    <li>
+                        <a href = "grid-areas.html">Grid-areas</a>
+                    </li>
+                    <li>
+                        <a href = "#">Grid-template-columns</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 </body>
 </html>
