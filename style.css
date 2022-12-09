@@ -65,8 +65,7 @@ h3{
     text-align: center;
 }
 img {
-    width:300px;
-    height:200px;
+    max-width:300px;
     position: relative;
 }
 a{
@@ -224,7 +223,7 @@ a{
 }
 .tab{
     position: absolute;
-    width:300px;
+    width:100%;
     top: calc(50% - 15px);
     left: 0;
     background: lavender;
@@ -233,13 +232,13 @@ a{
 }
 .forabs{
     position:relative;
-    width:300px;
+    display:inline-block;
 }
 .nav{
     background: lavender;
     position:fixed;
     left:0;
-    top:20%;
+    top:calc(50% - 176px);
     text-align: center;
 }
 .in_nav{
@@ -302,7 +301,3 @@ ul{
 ul li ul li {
     width: 150px;
 }
-
-
-
-
