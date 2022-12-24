@@ -260,7 +260,8 @@ ul li a{
     text-decoration: none;
     text-align: center;
     display: block;
-    padding: 20px 30px;
+    position:relative;
+    padding: 20px 45px 20px 35px;
 }
 li{
     color: #137008;
@@ -272,32 +273,115 @@ li{
     position: relative;
     display:inline-block;
 }
-.ul1{
+.ul1, .ul3{
     position:absolute;
-    top:100%;
+    top:1000px;
     left:0;
-    display:none;
     text-align: center;
+    transition: top step-start;
+
 }
-.ul1 .ul1{
-    left:100%;
-    top:0;
+.ul1 .ul3{
+    left: 100%;
+    top:1000px;
 }
 .ul2{
     position: absolute;
     right:100%;
     bottom:0;
-    display:none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity step-start;
+}
+li:hover> .ul3{
+    top: 0;
+    transition: top 1s ease;
 }
 li:hover > .ul1{
-    display:block;
+    top: 100%;
+    transition: top 1s ease;
 }
 li:hover > .ul2{
-    display:block;
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 1s ease;
 }
 ul{
     font-size: 0;
 }
 ul li ul li {
     width: 150px;
+}
+.wrap>li:before{
+    content:"";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("gallery/sprites.png") -177px -106px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.wrap>li+li:before{
+    background: url("gallery/sprites.png") -177px -54px;
+}
+
+.wrap>li+li+li:before{
+    left: 70%;
+    background: url("gallery/sprites.png") -177px 0;
+}
+.wrap>li+li+li:hover:before{
+    background-position: -330px -390px;
+}
+.ul1>.spr_flt:before{
+    content:"";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("gallery/sprites.png") -280px -168px;
+    position: absolute;
+    left:70%;
+    top:0;
+}
+.ul1>.spr_flt:hover:before{
+    background: url("gallery/sprites.png") -230px -168px;
+}
+.ul1>li+li+li+li+li:before{
+    content:"";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("gallery/sprites.png") -230px -168px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.ul1>li+li+li+li+li:hover:before{
+    background: url("gallery/sprites.png") -280px -168px;
+}
+.socmenu{
+    background:none;
+    outline:none;
+    border-radius: 50%;
+}
+.socmenu a{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url("gallery/sprites.png") -230px -94px;
+    bottom:0;
+    left:0;
+    padding:0 0;
+}
+.socmenu:hover{
+    background:none;
+}
+.socmenu+.socmenu a{
+    background: url("gallery/sprites.png") -230px -10px;
+}
+.socmenu:hover a{
+    background-position: -314px -94px;
+}
+.socmenu+.socmenu:hover a{
+    background-position: -314px -10px;
 }
