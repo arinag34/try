@@ -61,7 +61,7 @@ h3{
     padding:20px;
     width:300px;
     margin:0 auto;
-    border: #e6d3ec 10px dotted;
+    border: lavender 10px dotted;
     text-align: center;
 }
 img {
@@ -242,7 +242,7 @@ a{
     text-align: center;
 }
 .in_nav{
-    outline: 1px solid blueviolet;
+    border: 1px solid blueviolet;
     width:100px;
     padding:20px 30px;
 }
@@ -317,47 +317,47 @@ ul li ul li {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url("gallery/sprites.png") -177px -106px;
+    background: url("gallery/sprites.png") -185px -115px;
     position: absolute;
     left:0;
     top:0;
 }
 .wrap>li+li:before{
-    background: url("gallery/sprites.png") -177px -54px;
+    background: url("gallery/sprites.png") -185px -60px;
 }
 
 .wrap>li+li+li:before{
     left: 70%;
-    background: url("gallery/sprites.png") -177px 0;
+    background: url("gallery/sprites.png") -185px 0;
 }
 .wrap>li+li+li:hover:before{
-    background-position: -330px -390px;
+    background-position: -455px -505px;
 }
 .ul1>.spr_flt:before{
     content:"";
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url("gallery/sprites.png") -280px -168px;
+    background: url("gallery/sprites.png") -65px -175px;
     position: absolute;
     left:70%;
     top:0;
 }
 .ul1>.spr_flt:hover:before{
-    background: url("gallery/sprites.png") -230px -168px;
+    background: url("gallery/sprites.png") -20px -175px;
 }
 .ul1>li+li+li+li+li:before{
     content:"";
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url("gallery/sprites.png") -230px -168px;
+    background: url("gallery/sprites.png") -350px -175px;
     position: absolute;
     left:0;
     top:0;
 }
 .ul1>li+li+li+li+li:hover:before{
-    background: url("gallery/sprites.png") -280px -168px;
+    background: url("gallery/sprites.png") -395px -175px;
 }
 .socmenu{
     background:none;
@@ -368,7 +368,7 @@ ul li ul li {
     display: block;
     width: 64px;
     height: 64px;
-    background: url("gallery/sprites.png") -230px -94px;
+    background: url("gallery/sprites.png") -20px -105px;
     bottom:0;
     left:0;
     padding:0 0;
@@ -377,11 +377,56 @@ ul li ul li {
     background:none;
 }
 .socmenu+.socmenu a{
-    background: url("gallery/sprites.png") -230px -10px;
+    background-position: -20px -20px;
+}
+.socmenu+.socmenu+.socmenu a{
+    background-position: -585px -15px;
+}
+.socmenu+.socmenu+.socmenu+.socmenu a{
+    background-position: -585px -105px;
 }
 .socmenu:hover a{
-    background-position: -314px -94px;
+    background-position: -435px -104px;
 }
 .socmenu+.socmenu:hover a{
-    background-position: -314px -10px;
+    background-position: -436px -20px;
+}
+.socmenu+.socmenu+.socmenu:hover a{
+    background-position: -434px -250px;
+}
+.socmenu+.socmenu+.socmenu+.socmenu:hover a{
+    background-position: -345px -253px;
+}
+.wrap_hov_me{
+    position:fixed;
+    background:lavender;
+    width: 150px;
+    right:-300px;
+    top:50%;
+    transform: translateY(-50%);
+    padding:110px;
+}
+.hov_me{
+    position:absolute;
+    font-size:40px;
+    color: #137008;
+    left:0;
+    top:50%;
+    transform: translateY(-50%) translateX(-40%) rotate(-90deg);
+    animation: hov ease 0.8s infinite;
+}
+@keyframes hov {
+    0%{opacity: 1}
+    100%{opacity: 0}
+}
+.wrap_hov_me:hover{
+    transform: rotateZ(-180deg);
+    right: -40px;
+    transition: all 1s ease;
+}
+.wrap_hov_me>ul{
+    transform:rotate(-45deg);
+}
+.wrap_hov_me>ul>li>a{
+    transform:rotate(225deg);
 }
