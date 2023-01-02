@@ -261,7 +261,7 @@ ul li a{
     text-align: center;
     display: block;
     position:relative;
-    padding: 20px 45px 20px 35px;
+    padding: 20px 50px 20px 50px;
 }
 li{
     color: #137008;
@@ -327,7 +327,7 @@ ul li ul li {
 }
 
 .wrap>li+li+li:before{
-    left: 70%;
+    left: calc(100% - 42px);
     background: url("gallery/sprites.png") -185px 0;
 }
 .wrap>li+li+li:hover:before{
@@ -340,7 +340,7 @@ ul li ul li {
     height: 50px;
     background: url("gallery/sprites.png") -65px -175px;
     position: absolute;
-    left:70%;
+    right: 0;
     top:0;
 }
 .ul1>.spr_flt:hover:before{
