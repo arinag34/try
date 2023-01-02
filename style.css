@@ -361,40 +361,53 @@ ul li ul li {
 }
 .socmenu{
     background:none;
-    outline:none;
-    border-radius: 50%;
+    outline: none;
+}
+.socmenu:hover{
+    background:none;
 }
 .socmenu a{
     display: block;
     width: 64px;
     height: 64px;
-    background: url("gallery/sprites.png") -20px -105px;
     bottom:0;
     left:0;
     padding:0 0;
+    overflow: hidden;
 }
-.socmenu:hover{
+.socmenu a:before{
+    content:"";
+    width: 64px;
+    height: 64px;
+    background: url("gallery/sprites.png") -20px -105px;
+    display: inline-block;
+    position: absolute;
+    left:0;
+    top:0;
+
+}
+.socmenu:hover:before{
     background:none;
 }
-.socmenu+.socmenu a{
+.socmenu+.socmenu a:before{
     background-position: -20px -20px;
 }
-.socmenu+.socmenu+.socmenu a{
+.socmenu+.socmenu+.socmenu a:before{
     background-position: -585px -15px;
 }
-.socmenu+.socmenu+.socmenu+.socmenu a{
+.socmenu+.socmenu+.socmenu+.socmenu a:before{
     background-position: -585px -105px;
 }
-.socmenu:hover a{
+.socmenu:hover a:before{
     background-position: -435px -104px;
 }
-.socmenu+.socmenu:hover a{
+.socmenu+.socmenu:hover a:before{
     background-position: -436px -20px;
 }
-.socmenu+.socmenu+.socmenu:hover a{
+.socmenu+.socmenu+.socmenu:hover a:before{
     background-position: -434px -250px;
 }
-.socmenu+.socmenu+.socmenu+.socmenu:hover a{
+.socmenu+.socmenu+.socmenu+.socmenu:hover a:before{
     background-position: -345px -253px;
 }
 .wrap_hov_me{
@@ -427,6 +440,6 @@ ul li ul li {
 .wrap_hov_me>ul{
     transform:rotate(-45deg);
 }
-.wrap_hov_me>ul>li>a{
+.wrap_hov_me>ul>li>a:before{
     transform:rotate(225deg);
 }
