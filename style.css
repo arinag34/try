@@ -57,7 +57,7 @@ body{
     height: 70%;
     position: absolute;
     right: 0;
-    margin-top: 0;
+    margin-top: 40px;
     background: radial-gradient(circle at -30% -410%, transparent 90%, rgba(19, 112, 8, 0.5) 90%);
 }
 h1, h2, h3{
