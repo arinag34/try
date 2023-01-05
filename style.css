@@ -48,7 +48,7 @@ body{
     width: 70%;
     height: 70%;
     position: absolute;
-    margin-top: 90%;
+    margin-top: 106.5%;
     background: radial-gradient(circle at 130% -410%, transparent 90%, rgba(255, 105,180, 0.5) 90%);
 }
 .gradient:after{
@@ -57,7 +57,7 @@ body{
     height: 70%;
     position: absolute;
     right: 0;
-    margin-top: -16.65%;
+    margin-top: 0;
     background: radial-gradient(circle at -30% -410%, transparent 90%, rgba(19, 112, 8, 0.5) 90%);
 }
 h1, h2, h3{
